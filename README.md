@@ -1,36 +1,69 @@
-# AI Made Approachable Rivet Tutorials
-This github repository is a collection of all my Rivet tutorial files. If you are interested to learn more, please go and visit my Youtube-Channel: https://www.youtube.com/channel/UCmKOkBE5i2MQG_2UOi9GoNg/
+# My Wardrobe
 
-## To download:
-Just press on "Code" and "Download Zip" or go to a specific file and press on "Download raw file"
+Your entire wardrobe as a browsable collection — clothing cutouts extracted from your
+own photos, laid out in a catalog grid, with AI try-on renders of you wearing each piece.
 
-## Video tutorials
-There is a corresponding video tutorial on Youtube for each file:
-| Video title | Youtube Link | File/Link |
-| -- | -- | -- |
-| Rivet: Break Free from Chat: AI-Powered Interactivity on Websites - Low Code Prototyping with Anvil| https://youtu.be/FbyPw7AcNEo | chatbot-ui-graphs/frontend_prototype_shopping.rivet-project |
-| Rivet: Chat with Your Emails! - Build an AI Email-Assistant with GPT-4 and Gmail - No Code Solution | https://youtu.be/n3Cp_xQcN2s | chatbot-ui-graphs/chat_with_your_emails.rivet-project + chatbot-ui-graphs/chat_with_your_emails.md |
-| Rivet: Launch Rivet Graphs with Chatbot UI on Railway.app - Quick, Simple & Free Cloud Deployment!| https://youtu.be/WY2t1wFg50M | chatbot-ui-graphs/example_no_system_prompt.rivet-project + chatbot-ui-graphs/example_system_prompt.rivet-project |
-| Rivet: Unlock Specialized AI Assistants in your Rivet Chats with @Mentions! - Easy No Code Tutorial| https://youtu.be/XNfTCxF-CU4 | chatbot-ui-graphs/@mentions_for_ai_assistants.rivet-project* |
-| Rivet: Chatbot Brand Safety - How To Stop Negative AI Outputs, No Code Solution! | https://youtu.be/Vxd64MDjW20 | - |
-| Rivet: How To Add A Beautiful Chat-Interface To All Your Projects - Low Code Tutorial | https://youtu.be/dM8hiOMnMzU | https://github.com/ai-made-approachable/rivet-chat-api |
-| Rivet: How To Use OpenAI's Assistants API Including Retrieval And Code Execution - No Code Tutorial | https://youtu.be/mAQT8KMg2Zw | Open AI Assistants API.rivet-project |
-| Rivet: Fine-Tune ChatGPT in Just 5 Minutes with Synthetic Data - Easy, No Code Tutorial! | https://youtu.be/a45y5bmLPY8 | Finetuning_example.rivet-project |
-| Rivet: Own Your Output: Master Structured Data with ChatGPT Or Other LLMs! - No Code Tutorial | https://youtu.be/KCJvLkX2HwU | JSON mode.rivet-project |
-| Rivet: How To Create A Personalized AI With Self-editing Long-term Memory  - No Code Tutorial | https://youtu.be/_XBHgSCtGts | Personalized agent.rivet-project |
-| Rivet: How To Automate Local Image Generation via stable-diffusion-webui - No Code Tutorial | https://youtu.be/TRf0l2Zvde0 | Local image generation.rivet-project |
-| Rivet: Create A Teachable Agent With Long Term Memory That Learns From You! - No code Tutorial | https://youtu.be/g7dhLpDAnW4 | Teachable Agent.rivet-project |
-| Rivet: How To Run Your Project/Graph As A Node.js Application - Low Code Tutorial | https://youtu.be/YC2zYA7cZJ4 | https://github.com/ai-made-approachable/rivet-node-basic-example |
-| Rivet: How To Use Function Calling And Extend ChatGPTs Abilities! - No Code Tutorial | https://youtu.be/gQzl503DKrk | Function calling example.rivet-project |
-| Rivet: Empower Your Chatbot With Semantic Routing! - no code tutorial | https://youtu.be/80YbWznN-qY | Semantic segmentation.rivet-project |
-| Rivet: How To Create A Knowledge Base (ChromaDB + Retrieval Augemented Generation)- no code tutorial | https://youtu.be/odiDX3g8fxc | RAG Chroma.rivet-project|
-| Rivet: How To Use "Retrieval Augmented Generation" (RAG) - No Code Tutorial | https://youtu.be/PHnNEPS7zgs | Retrieval Augmented Generation (RAG).rivet-project |
-| Rivet: How To Handle Chat History With ChatGPT/Local LLMs - No Plugins Or Coding Required | https://youtu.be/GJgazALjF2M | Managing chat history.rivet-project |
-| Rivet: How To Run Multiple Local LLMs In Your Projects With Ollama! Easy Comparison - No Code | https://youtu.be/I9JxxM5Td4E | Ollama Tutorial.rivet-project |
-| Rivet: How To Use Local LLMs & ChatGPT At The Same Time (LM Studio tutorial) | https://youtu.be/vyzNkWYIcac | - |
-| Rivet: Merge Web Content & ChatGPT - Pt. 1: 3 Easy Methods to Access Websites, No Coding! | https://youtu.be/f15kCTlAVn8 | WebscraperV2.rivet-project |
-| Rivet: Automate Your AI Tasks With Airtable For Free - No Code Tutorial | https://youtu.be/pgQssLZrtJY | Read and write data to airtable_v2.rivet-project |
-| Rivet: How To Use Google Search Results (SERPs) - No Code Tutorial! | https://youtu.be/jw4Lxota0f8 | Fetch google search results.rivet-project |
-| Rivet: How To NOT Use The Loop-Controller: Solution 1 "Splitting" | https://youtu.be/8aU3His4IdQ | How splitting works.rivet-project |
+Inspired by [@cdngdev's wardrobe demo](https://x.com/cdngdev) (extract every piece of
+clothing you own from your camera roll, then render new outfits on yourself) and the
+accompanying [extract-clothing-cutouts skill](https://gist.github.com/tandpfun/b73063c8be8fc46644da9925d48b3240)
+by [@tandpfun](https://github.com/tandpfun).
 
-*These projects need a setup of Rivet + ChatbotUI to be fully utilized: https://github.com/ai-made-approachable/rivet-chat-api
+## What's here
+
+- **The app** — a Vite + React wardrobe browser:
+  - a grid of transparent clothing cutouts on a studio backdrop
+  - click an item for a detail panel: name, category, and tag details ("office", "casual", …)
+  - **colors extracted from the image** — a primary color, swatch suggestions you can click
+    to apply, an eyedropper ("Pick primary color from image"), and a secondary color that is
+    only suggested when a distinct color has meaningful coverage
+  - **"Render on me"** — renders you wearing the selected piece with OpenAI's `gpt-image-1`
+  - drag & drop images anywhere to add items; edits persist in `localStorage`
+- **The skill** — `.claude/skills/extract-clothing-cutouts/SKILL.md`, included verbatim from
+  the gist. Point Claude Code (or Codex) at a folder of photos and it extracts deduplicated,
+  transparent, catalog-quality PNG cutouts of every garment worn in them.
+
+## Quick start
+
+```bash
+npm install
+npm run dev
+```
+
+The app opens with 15 generated placeholder garments so you can explore immediately
+(regenerate them anytime with `npm run samples`).
+
+## Filling it with *your* wardrobe
+
+1. In Claude Code, ask for the `extract-clothing-cutouts` skill and point it at a folder of
+   photos of you (it will ask for an input folder and an output folder name).
+   > Note: the skill was written for Codex's built-in `imagegen` tool. In Claude Code,
+   > substitute any image-generation step with your preferred image model (e.g. the
+   > `gpt-image-1` API) — the workflow, QA, and chroma-key steps all still apply.
+2. Drop the finished PNGs into `public/wardrobe/` and add entries to
+   `src/data/wardrobe.json` — or simply drag & drop them onto the running app.
+
+## Try-on renders
+
+1. Put a full-body photo of yourself at `public/me.jpg` (or `.png`).
+2. Provide an OpenAI API key, either as `VITE_OPENAI_API_KEY` in `.env` (see
+   `.env.example`) or by pasting it into the panel — it's stored only in your browser's
+   `localStorage`.
+3. Select an item and hit **Render on me**.
+
+> ⚠️ The key is used directly from the browser, which is fine for a personal tool running
+> on `localhost` — don't deploy this publicly with a key baked in.
+
+## Project layout
+
+```
+.claude/skills/extract-clothing-cutouts/   the extraction skill (verbatim from the gist)
+public/wardrobe/                           cutout images (placeholders until you add yours)
+scripts/generate-sample-cutouts.mjs        regenerates the placeholder SVGs
+src/
+  App.tsx                                  grid, filters, drag & drop import
+  components/DetailPanel.tsx               try-on pane + item form
+  lib/colors.ts                            palette extraction & secondary-color suggestion
+  lib/tryon.ts                             gpt-image-1 try-on rendering
+  lib/storage.ts                           localStorage overlay over the seed data
+  data/wardrobe.json                       seed wardrobe
+```

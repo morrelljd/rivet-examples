@@ -1,0 +1,17 @@
+[
+  { "id": "tee-black-logo", "name": "Black logo tee", "category": "Tops", "image": "/wardrobe/tee-black-logo.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "polo-navy", "name": "Navy polo", "category": "Tops", "image": "/wardrobe/polo-navy.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "tee-sand", "name": "Sand tee", "category": "Tops", "image": "/wardrobe/tee-sand.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "shirt-sky-stripe", "name": "Top", "category": "Tops", "image": "/wardrobe/shirt-sky-stripe.svg", "primaryColor": "#87CEEB", "secondaryColor": null, "details": ["office", "casual"] },
+  { "id": "shirt-flannel", "name": "Plaid flannel", "category": "Tops", "image": "/wardrobe/shirt-flannel.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "tee-white", "name": "White tee", "category": "Tops", "image": "/wardrobe/tee-white.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "shirt-tan-camp", "name": "Tan camp shirt", "category": "Tops", "image": "/wardrobe/shirt-tan-camp.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "longsleeve-cream", "name": "Cream long sleeve", "category": "Tops", "image": "/wardrobe/longsleeve-cream.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "tee-white-graphic", "name": "Graphic tee", "category": "Tops", "image": "/wardrobe/tee-white-graphic.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "tee-truck", "name": "Truck tee", "category": "Tops", "image": "/wardrobe/tee-truck.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "tee-print-cream", "name": "Print tee", "category": "Tops", "image": "/wardrobe/tee-print-cream.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "shirt-blue-camp", "name": "Blue camp shirt", "category": "Tops", "image": "/wardrobe/shirt-blue-camp.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "overshirt-denim", "name": "Denim overshirt", "category": "Tops", "image": "/wardrobe/overshirt-denim.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "quarterzip-gray", "name": "Gray quarter-zip", "category": "Tops", "image": "/wardrobe/quarterzip-gray.svg", "primaryColor": null, "secondaryColor": null, "details": [] },
+  { "id": "shirt-rose", "name": "Rose shirt", "category": "Tops", "image": "/wardrobe/shirt-rose.svg", "primaryColor": null, "secondaryColor": null, "details": [] }
+]
